@@ -1,10 +1,4 @@
 jupyter
+pymatgen
 numpy
 scipy
-matplotlib
-sympy
-nose
-scikit-learn
-ase
-panda
-pymatgen
