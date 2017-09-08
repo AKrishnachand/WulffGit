@@ -19,11 +19,11 @@ ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 RUN conda install libgcc
-ADD Asap-3.8.4 Asap-3.8.4
-RUN cd Asap-3.8.4 \
-                  && make depend \
-                  && make serial \
-                  && make install
+#ADD Asap-3.8.4 Asap-3.8.4
+#RUN cd Asap-3.8.4 \
+ #                 && make depend \
+  #                && make serial \
+   #               && make install
 
 #CMD octave -q compiling.m
 #CMD python Asap-3.8.4/setup.py install
@@ -31,8 +31,8 @@ RUN cd Asap-3.8.4 \
 RUN ls
 RUN pwd
   
-ENV export PATH=/home/main/notebooks/Asap-3.8.4/x86_64:$PATH
-ENV export PYTHONPATH=/home/main/notebooks/Asap-3.8.4/Python:/home/main/notebooks/Asap-3.8.4/x86_64:$PYTHONPATH
+#ENV export PATH=/home/main/notebooks/Asap-3.8.4/x86_64:$PATH
+#ENV export PYTHONPATH=/home/main/notebooks/Asap-3.8.4/Python:/home/main/notebooks/Asap-3.8.4/x86_64:$PYTHONPATH
 
 #RUN export PATH=/home/main/notebooks/Asap-3.8.4/Python:$PATH
 #RUN export PYTHONPATH=/home/main/notebooks/Asap-3.8.4/Python:$PYTHONPATH
