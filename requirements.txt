@@ -1,10 +1,6 @@
 jupyter
 numpy
-scipy
-matplotlib
-pandas
-sympy
-nose
-scikit-learn
 pymatgen
 ase
+scipy
+matplotlib
